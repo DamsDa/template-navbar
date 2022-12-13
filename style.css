@@ -1,0 +1,83 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(87, 80, 80)
+}
+
+.wraper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    padding: 15px;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(45, 192, 172);
+    box-shadow: 0 7px 15px 0 rgba(0, 0, 0, 0.5);
+}
+
+.branded{
+    display: flex;
+    flex-direction: row;  /*agar first-name dan last name kiri kanan */
+    font-size: 1.2em;
+    padding: 15px; /*supaya lebih menjorok */
+    cursor: pointer;
+}
+
+.first-name{
+    color: wheat;
+    font-weight: 800;
+}
+
+.last-name{
+    color: rgb(225, 65, 204);
+    padding: 4px;   /*supaya ada jarkanya ke kiri */
+    font-weight: 400; /*supaya lebih tebal fontnya*/
+}
+
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar > li{ /*agar rapih dan menghapus dekorasi teksnya seperti tanda tompel di samping text dan supaya menjorok pakai padding */
+    list-style-type:none ;
+    padding: 15px;
+}
+
+.navbar >li > a{ /*unutk memodifikasi textnya kalau di taroh ke li gak ada efeknya jadi kita masuk ke navbar>li>a */
+    color: white;
+    text-decoration: none; /*unutk menghapus garis bawahnya */
+}
+
+.navbar>li>img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.navbar>li>img:hover{
+    width: 60px;
+    height: 60px;
+    border-radius: 65px;
+    transition: all .3 ease-in-out;
+}
+
+.aktif{
+    background-color: rgb(225, 65, 204);
+    color: black;
+    padding: 15px;
+}
+
+.navbar>li>a:hover{
+    color: black;
+    transition: all .3 ease-in-out;
+}
